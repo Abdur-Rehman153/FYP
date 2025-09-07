@@ -1,0 +1,81 @@
+.jaz {
+  background: linear-gradient(to right, #e1eeff, #FBFCFF);
+}
+
+.person-details {
+  background-color: #87CEFA;
+  color: black;
+  font-family: "Serif", serif;
+}
+
+.fields {}
+
+h1 {
+  background-color: white;
+  font-family: "Sans-Serif", sans-serif;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;   /* enables horizontal scrolling on small screens */
+}
+
+table {
+  width: 100%;        /* full width */
+  min-width: 600px;   /* ensures columns don’t shrink too much */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #b0d2ff;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-family: "Sans-Serif", sans-serif;
+  cursor: pointer;
+}
+
+/* Show the red star only for input fields */
+th span::after {
+  content: '*';
+  color: red;
+  margin-left: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;  /* shrink text slightly */
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;  /* full width button on mobile */
+  }
+}
